@@ -29,6 +29,8 @@ position: relative;
     position: fixed;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     width: 100%;
     background-color: #eee;
@@ -47,6 +49,7 @@ li {
 a {
     color: #000;
     text-decoration: none;
+    font-size: 13;
 }
   
 .container {
@@ -85,6 +88,7 @@ a {
 }
 
 #hero > h2 {
+  text-align: center;
     font-size: 2.5em ;
     
 }
@@ -119,6 +123,7 @@ a {
 }
 
   #features {
+  
     margin-top: 30px;
   }
 
@@ -154,6 +159,11 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
+  }
+
+  #how-it-works > h2 {
+    padding-bottom: 20px;
   }
 
 
@@ -235,3 +245,46 @@ a {
     padding: 0 10px;
   }
 
+  @media screen and (max-width: 560px) {
+    img {
+      height: 60px;
+    }
+    
+    #nav-bar {
+      height: 60px;
+    }
+
+    nav-bar > ul > li {
+      padding-left: 35px;
+    }
+    #features .icon {
+      font-size: 40px;
+   
+    }
+
+    #pricing {
+      margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+    }
+
+    .product {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      border: 1px ;
+      border-style: solid ;
+      border-color: #000;
+      border-radius: 3px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+  
+  }
